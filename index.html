@@ -8,8 +8,7 @@
 <meta name="description" content="Muhammad Humayun is a Junior Software Developer in Karachi building full-stack applications with C#, ASP.NET Core, Angular and SQL Server, and growing toward AI engineering with Python, machine learning, LLMs and RAG.">
 <meta name="author" content="Muhammad Humayun">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#FAFAFA">
 <link rel="canonical" href="https://muhammad-humayun.github.io/">
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Muhammad Humayun">
@@ -28,9 +27,9 @@
 <link rel="apple-touch-icon" href="https://github.com/muhammad-humayun.png?size=180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap">
 <link rel="stylesheet" href="assets/styles.css">
-<script>try{var t=localStorage.getItem('mh-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('mh-theme')||'light')}catch(e){}</script>
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
@@ -67,20 +66,21 @@
 
 <header class="nav">
 <div class="wrap">
-<a class="logo" href="#home" aria-label="Muhammad Humayun — home"><i>MH</i> Muhammad Humayun</a>
+<a class="logo" href="#home" aria-label="Muhammad Humayun — home">MH<i></i></a>
 <nav aria-label="Primary">
 <ul class="menu" id="menu">
 <li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
+<li><a href="#build">What I Build</a></li>
 <li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
 <li><a href="#research">AI &amp; Research</a></li>
-<li><a href="#education">Education</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 <div class="nav-actions">
 <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme"></button>
+<a class="btn dark" href="#contact">Connect With Me</a>
 <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div>
 </div>
@@ -88,189 +88,157 @@
 
 <main id="main">
 
-<section class="hero" id="home" style="border-top:0">
+<section class="hero" id="home" style="padding-top:96px">
 <div class="wrap">
 <div>
-<span class="eyebrow">available for software &amp; AI projects</span>
-<h1>Building reliable software today,<br>learning to engineer <em>AI</em> for tomorrow.</h1>
-<p class="lead">I'm <strong>Muhammad Humayun</strong>, a Junior Software Developer in Karachi. I build full-stack applications with <strong>C#, ASP.NET Core, Angular and SQL Server</strong>, and I'm steadily growing toward <strong>AI engineering</strong> through Python, machine learning, LLMs and RAG.</p>
+<span class="pill">Junior Software Developer — Logicose</span>
+<h1>Building Reliable Software Today, Engineering <span class="grad-text">AI</span> for Tomorrow</h1>
+<p class="lead">Iqra University Computer Science student and Junior Software Developer at Logicose, Karachi. I build full-stack applications with C#, ASP.NET Core, Angular and SQL Server, and I'm steadily growing toward AI engineering through Python, machine learning, LLMs and RAG.</p>
 <div class="cta">
-<a class="btn primary" href="#projects">View projects</a>
-<a class="btn" href="#contact">Get in touch</a>
-</div>
-<div class="social" aria-label="Social links">
-<a href="https://github.com/muhammad-humayun" rel="me noopener" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a>
-<a href="https://www.linkedin.com/in/humayunmuhammad/" rel="me noopener" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.5c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.7C24 .8 23.2 0 22.2 0z"/></svg></a>
-<a href="https://www.kaggle.com/humayunmuhammad" rel="me noopener" target="_blank" aria-label="Kaggle"><svg viewBox="0 0 24 24"><path d="M18.8 23.6c0 .2-.2.4-.4.4h-3.3c-.2 0-.4-.1-.5-.3l-5.4-7-1.5 1.4v5.5c0 .2-.2.4-.4.4H4.7c-.2 0-.4-.2-.4-.4V.4c0-.2.2-.4.4-.4h2.6c.2 0 .4.2.4.4v13.9l6.5-6.6c.1-.1.3-.2.5-.2h3.4c.2 0 .4.2.4.4 0 .1 0 .2-.1.3l-6.9 6.7 7.2 8.4c.1.1.1.2.1.3z"/></svg></a>
-<a href="mailto:humayunmuhammad902@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2.5V18h18V6.5l-9 6.3-9-6.3zM4.3 6l7.7 5.4L19.7 6H4.3z"/></svg></a>
+<a class="btn primary" href="#projects">Explore Projects →</a>
+<a class="btn" href="#contact">Connect With Me</a>
 </div>
 </div>
-
-<aside class="code-card" aria-label="About me, written as code">
-<div class="code-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-<div class="tabs" role="tablist"><button class="active" data-lang="cs" role="tab">Developer.cs</button><button data-lang="py" role="tab">developer.py</button></div></div>
-<div class="code-body" data-lang="cs"><pre><span class="k">public record</span> <span class="t">Developer</span>(
-    <span class="t">string</span> Name      = <span class="s">"Muhammad Humayun"</span>,
-    <span class="t">string</span> Role      = <span class="s">"Junior Software Developer"</span>,
-    <span class="t">string</span> Location  = <span class="s">"Karachi, PK"</span>,
-    <span class="t">string[]</span> Stack   = [<span class="s">"C#"</span>, <span class="s">".NET"</span>, <span class="s">"Angular"</span>, <span class="s">"SQL Server"</span>],
-    <span class="t">string[]</span> Learning = [<span class="s">"LLMs"</span>, <span class="s">"RAG"</span>, <span class="s">"ML"</span>],
-    <span class="t">bool</span> OpenToWork  = <span class="n">true</span>
-);
-<span class="c">// goal: AI Engineer, built on solid software fundamentals</span></pre></div>
-<div class="code-body" data-lang="py" hidden><pre><span class="k">class</span> <span class="t">Developer</span>:
-    name     = <span class="s">"Muhammad Humayun"</span>
-    role     = <span class="s">"Junior Software Developer"</span>
-    location = <span class="s">"Karachi, PK"</span>
-    stack    = [<span class="s">"C#"</span>, <span class="s">".NET"</span>, <span class="s">"Angular"</span>, <span class="s">"SQL Server"</span>]
-    learning = [<span class="s">"LLMs"</span>, <span class="s">"RAG"</span>, <span class="s">"ML"</span>]
-
-    <span class="k">def</span> <span class="p">goal</span>(self):
-        <span class="k">return</span> <span class="s">"AI Engineer with strong fundamentals"</span></pre></div>
-</aside>
+<div class="portrait">
+<img src="https://github.com/muhammad-humayun.png?size=460" alt="Portrait of Muhammad Humayun" width="300" height="300" fetchpriority="high">
+<div class="badge-float"><b></b>Open to opportunities</div>
+</div>
 </div>
 </section>
+
+<div class="stats" aria-label="Quick facts">
+<div class="wrap">
+<div class="stat"><b class="grad-text" data-count="22" data-suffix="+">0+</b><span>Public Repositories</span></div>
+<div class="stat"><b class="grad-text" data-count="6">0</b><span>Featured Projects</span></div>
+<div class="stat"><b class="grad-text" data-count="5" data-suffix="+">0+</b><span>Tech Stacks in Use</span></div>
+<div class="stat"><b class="grad-text">3rd</b><span>Year · BS Computer Science</span></div>
+</div>
+</div>
 
 <section id="about">
 <div class="wrap">
-<div class="sec-head reveal"><span class="kicker">01 — About</span><h2>A developer who likes the whole stack, and the data underneath it.</h2></div>
-<div class="about">
-<div class="reveal">
-<p>I'm a <strong>third-year Computer Science student at Iqra University</strong> and a <strong>Junior Software Developer at Logicose</strong> in Karachi. Day to day I work on business systems: REST APIs in ASP.NET Core, Angular front-ends, and the SQL Server databases behind them.</p>
-<p>My route into software came through data. Python, statistics and machine learning were my first serious tools, and most of my public projects still live there — analytics pipelines, classical ML, notebooks. That background shapes how I build: I care about the data model as much as the endpoint.</p>
-<p>Where I'm heading is <strong>AI engineering</strong> — bringing LLMs, retrieval-augmented generation and agents into real .NET and Python applications. I'm early on that path and I'd rather show the work than overstate it.</p>
+<div class="sec-head reveal"><span class="eyebrow">About</span><h2>A developer who likes the whole stack — and the data underneath it</h2>
+<p>I'm a third-year Computer Science student at Iqra University and a Junior Software Developer at Logicose in Karachi. Day to day I work on business systems: REST APIs in ASP.NET Core, Angular front-ends, and the SQL Server databases behind them. My route into software came through data — Python, statistics and machine learning were my first serious tools — and that shapes how I build: I care about the data model as much as the endpoint. Where I'm heading is AI engineering: bringing LLMs, retrieval-augmented generation and agents into real .NET and Python applications. I'm early on that path, and I'd rather show the work than overstate it.</p></div>
 </div>
-<div class="facts reveal">
-<div class="fact"><b>.NET</b><span>Primary backend stack — C#, ASP.NET Core, REST, SQL Server</span></div>
-<div class="fact"><b>22</b><span>Public repositories on GitHub, from analytics pipelines to DSA practice</span></div>
-<div class="fact"><b>AI</b><span>Current focus: LLMs, RAG and ML, applied to real applications</span></div>
-<div class="fact"><b>PK</b><span>Based in Karachi, open to remote and international teams</span></div>
-</div>
+</section>
+
+<section id="build" class="alt">
+<div class="wrap">
+<div class="sec-head reveal"><span class="eyebrow">What I Build</span><h2>Software that holds up in production</h2><p>Four areas I work in — the first two professionally at Logicose, the last two through personal projects and study.</p></div>
+<div class="grid-4">
+<article class="card service reveal"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg></div><h3>Backend APIs</h3><p>REST APIs in ASP.NET Core on SQL Server — authentication, business logic, stored procedures and clean data access for client systems.</p></article>
+<article class="card service reveal"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Full-Stack Web Apps</h3><p>Angular front-ends wired to .NET backends — responsive UI components, forms, dashboards and integrations that end users actually touch.</p></article>
+<article class="card service reveal"><div class="ico soft"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 3 5-6"/></svg></div><h3>Data &amp; Machine Learning</h3><p>Python pipelines, analysis and classical ML with Pandas and scikit-learn, with Power BI and SQL for reporting — where most of my public projects live.</p></article>
+<article class="card service reveal"><div class="ico soft"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 4.5-2 7H7c0-2.5-2-4-2-7a7 7 0 0 1 7-7z"/><path d="M9 20h6M10 23h4"/></svg></div><h3>AI &amp; RAG Applications</h3><p>LLM-powered features and retrieval-augmented generation, with a focus on bringing them into .NET services — my current learning and build focus.</p></article>
 </div>
 </div>
 </section>
 
-<section id="skills">
+<section id="projects">
 <div class="wrap">
-<div class="sec-head reveal"><span class="kicker">02 — Skills</span><h2>What I work with</h2><p>Depth markers are honest: four bars means daily professional use, one means I've shipped something small with it.</p></div>
-<div class="skill-grid">
-<article class="skill-card reveal"><h3><span>⚙️</span>Backend</h3>
-<div class="skill">C# / .NET<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
-<div class="skill">ASP.NET Core<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
-<div class="skill">REST API design<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
-<div class="skill">Authentication &amp; authorization<div class="level"><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
+<div class="sec-head reveal"><span class="eyebrow">Projects</span><h2>Selected work</h2><p>Everything here is public on GitHub. The .NET work I do at Logicose is proprietary, so the open-source side leans toward data and ML.</p></div>
+<div class="grid-2">
+<article class="card proj featured reveal">
+<div class="proj-top"><div class="mark">Job<span>Market</span>Intel</div><span class="tag">Flagship</span></div>
+<span class="kicker">Data platform · Python</span>
+<h3>Job Market Intelligence</h3>
+<p>An analytics platform for the Pakistani job market. A configurable ETL pipeline ingests postings into a relational store managed with Alembic migrations, an NLP layer extracts skills and roles, an ML module forecasts demand, and a Streamlit dashboard surfaces the results. Containerised with Docker Compose.</p>
+<div class="chips"><span class="chip">Python</span><span class="chip">ETL</span><span class="chip">NLP</span><span class="chip">Forecasting</span><span class="chip">Streamlit</span><span class="chip">Docker</span><span class="chip">Alembic</span></div>
+<a class="more" href="https://github.com/muhammad-humayun/Job-Market-Intelligence" target="_blank" rel="noopener">View on GitHub →</a>
 </article>
-<article class="skill-card reveal"><h3><span>🖥️</span>Frontend</h3>
-<div class="skill">Angular<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
-<div class="skill">TypeScript<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
-<div class="skill">HTML &amp; CSS<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
-<div class="skill">Responsive UI<div class="level"><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
+<article class="card proj reveal">
+<div class="proj-top"><div class="mark">Customer<span>Insights</span></div><span class="tag">Project</span></div>
+<span class="kicker">Analytics · Python · MySQL · Power BI</span>
+<h3>Customer Shopping Behavior Analysis</h3>
+<p>End-to-end analytics: cleaning and exploring customer data in Python, modelling it in MySQL, and a Power BI dashboard that turns purchase patterns into business insight.</p>
+<a class="more" href="https://github.com/muhammad-humayun/Customer-Behavior-Analaysis" target="_blank" rel="noopener">View on GitHub →</a>
 </article>
-<article class="skill-card reveal"><h3><span>🗄️</span>Database</h3>
-<div class="skill">SQL Server<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
-<div class="skill">MySQL<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
-<div class="skill">Stored procedures &amp; query tuning<div class="level"><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
-<div class="skill">MongoDB<div class="level"><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
+<article class="card proj reveal">
+<div class="proj-top"><div class="mark">Face<span>LBP</span></div><span class="tag">Project</span></div>
+<span class="kicker">Computer vision · OpenCV</span>
+<h3>Face Recognition using Local Binary Patterns</h3>
+<p>Classical face recognition: LBP feature extraction with OpenCV feeding a machine-learning classifier — a deliberately non-deep-learning approach to understand the fundamentals.</p>
+<a class="more" href="https://github.com/muhammad-humayun/Face-Recognition-Using-LBP" target="_blank" rel="noopener">View on GitHub →</a>
 </article>
-<article class="skill-card reveal"><h3><span>🤖</span>AI &amp; Data</h3>
-<div class="skill">Python · Pandas · NumPy<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
-<div class="skill">Scikit-learn / classical ML<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
-<div class="skill">LLMs &amp; RAG<div class="level"><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
-<div class="skill">Power BI · visualisation<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
+<article class="card proj reveal">
+<div class="proj-top"><div class="mark">ML<span>Notebooks</span></div><span class="tag">Study</span></div>
+<span class="kicker">Machine learning · scikit-learn</span>
+<h3>Supervised ML, worked by hand</h3>
+<p>Notebooks following <em>Introduction to Machine Learning with Python</em> — supervised algorithms, a first model on Iris, regression on insurance data, with the reasoning written out.</p>
+<a class="more" href="https://github.com/muhammad-humayun/Introduction-to-Machine-Learning-with-Python" target="_blank" rel="noopener">View on GitHub →</a>
 </article>
-<article class="skill-card reveal"><h3><span>🧰</span>Tools</h3>
-<div class="skill">Git &amp; GitHub<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
-<div class="skill">Docker<div class="level"><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
-<div class="skill">CI/CD (GitHub Actions)<div class="level"><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
-<div class="skill">Visual Studio · VS Code · Jupyter<div class="level"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+<article class="card proj reveal">
+<div class="proj-top"><div class="mark">DSA<span>.py</span></div><span class="tag">Reference</span></div>
+<span class="kicker">Fundamentals · Python</span>
+<h3>Data Structures &amp; Algorithms in Python</h3>
+<p>Topic-by-topic implementations built while preparing for technical interviews — the reference I still go back to.</p>
+<a class="more" href="https://github.com/muhammad-humayun/DSA_with_Python" target="_blank" rel="noopener">View on GitHub →</a>
+</article>
+<article class="card proj reveal">
+<div class="proj-top"><div class="mark">DSA<span>Viz</span></div><span class="tag">Desktop</span></div>
+<span class="kicker">Java · Swing</span>
+<h3>DSA Visualizer</h3>
+<p>A Java Swing application that animates Stack, Queue, Linked List and HashMap operations so students can see what the code is doing.</p>
+<a class="more" href="https://github.com/muhammad-humayun/java-dsa-visualization-master" target="_blank" rel="noopener">View on GitHub →</a>
 </article>
 </div>
-<p class="legend">▮▮▮▮ daily at work &nbsp; ▮▮▮▯ comfortable &nbsp; ▮▮▯▯ used in projects &nbsp; ▮▯▯▯ learning</p>
 </div>
 </section>
 
-<section id="experience">
+<section id="experience" class="alt">
 <div class="wrap">
-<div class="sec-head reveal"><span class="kicker">03 — Experience</span><h2>Where I've worked</h2></div>
-<ol class="timeline">
-<li class="tl-item reveal">
+<div class="sec-head center reveal"><span class="eyebrow">Experience &amp; Education</span><h2>Where I've worked and studied</h2></div>
+<ol class="timeline" style="list-style:none;margin:0">
+<li class="tl reveal"><div class="card">
 <time>Present</time>
 <h3>Junior Software Developer</h3>
 <div class="org">Logicose · Karachi, Pakistan</div>
 <ul>
 <li>Build and maintain REST APIs with ASP.NET Core and SQL Server for client business systems.</li>
 <li>Develop Angular front-end components and integrate them with backend services.</li>
-<li>Work in a Git-based team workflow with code review, and contribute to AI-assisted features as they come into the product line.</li>
+<li>Work in a Git-based team workflow with code review; contribute to AI-assisted features as they come into the product line.</li>
 </ul>
-<div class="chips"><span class="chip">C#</span><span class="chip">ASP.NET Core</span><span class="chip">Angular</span><span class="chip">SQL Server</span><span class="chip">REST</span><span class="chip">Git</span></div>
-</li>
+</div></li>
+<li class="tl reveal"><div class="card">
+<time>2024 – 2028</time>
+<h3>B.S. Computer Science</h3>
+<div class="org">Iqra University · Karachi — third year · CGPA 3.2</div>
+<p>Coursework spanning programming, data structures and algorithms, databases, statistics and machine learning.</p>
+</div></li>
+<li class="tl reveal"><div class="card">
+<time>2024</time>
+<h3>Certifications</h3>
+<div class="org">Kaggle · Coursera</div>
+<p>Python (Kaggle, 2024) · Google Data Analytics (Coursera, in progress).</p>
+</div></li>
 </ol>
 </div>
 </section>
 
-<section id="projects">
+<section id="skills">
 <div class="wrap">
-<div class="sec-head reveal"><span class="kicker">04 — Projects</span><h2>Selected work</h2><p>Everything here is public on GitHub. The .NET work I do at Logicose is proprietary, so the open-source side leans toward data and ML.</p></div>
-<div class="proj-grid">
-<article class="proj featured reveal">
-<div class="proj-top"><div class="ico" aria-hidden="true">📈</div><div class="proj-links"><a href="https://github.com/muhammad-humayun/Job-Market-Intelligence" target="_blank" rel="noopener" aria-label="Job Market Intelligence on GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a></div></div>
-<span class="tag">Flagship · Data platform</span>
-<h3>Job Market Intelligence</h3>
-<p>An analytics platform for the Pakistani job market. A configurable ETL pipeline ingests postings into a relational store managed with Alembic migrations, an NLP layer extracts skills and roles, an ML module forecasts demand, and a Streamlit dashboard surfaces the results. Containerised with Docker Compose.</p>
-<div class="chips"><span class="chip">Python</span><span class="chip">ETL</span><span class="chip">NLP</span><span class="chip">Forecasting</span><span class="chip">Streamlit</span><span class="chip">Docker</span><span class="chip">Alembic</span></div>
-</article>
-<article class="proj reveal">
-<div class="proj-top"><div class="ico" aria-hidden="true">🛒</div><div class="proj-links"><a href="https://github.com/muhammad-humayun/Customer-Behavior-Analaysis" target="_blank" rel="noopener" aria-label="Customer Behavior Analysis on GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a></div></div>
-<span class="tag">Analytics</span>
-<h3>Customer Shopping Behavior Analysis</h3>
-<p>End-to-end analytics project: cleaning and exploring customer data in Python, modelling it in MySQL, and building a Power BI dashboard that turns purchase patterns into business insight.</p>
-<div class="chips"><span class="chip">Python</span><span class="chip">MySQL</span><span class="chip">Power BI</span></div>
-</article>
-<article class="proj reveal">
-<div class="proj-top"><div class="ico" aria-hidden="true">🙂</div><div class="proj-links"><a href="https://github.com/muhammad-humayun/Face-Recognition-Using-LBP" target="_blank" rel="noopener" aria-label="Face Recognition using LBP on GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a></div></div>
-<span class="tag">Computer vision</span>
-<h3>Face Recognition using Local Binary Patterns</h3>
-<p>Classical face recognition: LBP feature extraction with OpenCV feeding a machine-learning classifier — a deliberately non-deep-learning approach to understand the fundamentals.</p>
-<div class="chips"><span class="chip">OpenCV</span><span class="chip">Scikit-learn</span><span class="chip">Python</span></div>
-</article>
-<article class="proj reveal">
-<div class="proj-top"><div class="ico" aria-hidden="true">📘</div><div class="proj-links"><a href="https://github.com/muhammad-humayun/Introduction-to-Machine-Learning-with-Python" target="_blank" rel="noopener" aria-label="Intro to Machine Learning notebooks on GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a></div></div>
-<span class="tag">Machine learning</span>
-<h3>Supervised ML, worked by hand</h3>
-<p>Notebooks following <em>Introduction to Machine Learning with Python</em> — supervised algorithms, a first model on the Iris dataset, and regression on insurance data, with the reasoning written out rather than copied.</p>
-<div class="chips"><span class="chip">Jupyter</span><span class="chip">Scikit-learn</span></div>
-</article>
-<article class="proj reveal">
-<div class="proj-top"><div class="ico" aria-hidden="true">🧮</div><div class="proj-links"><a href="https://github.com/muhammad-humayun/DSA_with_Python" target="_blank" rel="noopener" aria-label="DSA with Python on GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a></div></div>
-<span class="tag">Fundamentals</span>
-<h3>Data Structures &amp; Algorithms in Python</h3>
-<p>Topic-by-topic implementations built while preparing for technical interviews — the reference I still go back to.</p>
-<div class="chips"><span class="chip">Python</span><span class="chip">Algorithms</span></div>
-</article>
-<article class="proj reveal">
-<div class="proj-top"><div class="ico" aria-hidden="true">🧩</div><div class="proj-links"><a href="https://github.com/muhammad-humayun/java-dsa-visualization-master" target="_blank" rel="noopener" aria-label="DSA Visualizer on GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a></div></div>
-<span class="tag">Desktop · Java</span>
-<h3>DSA Visualizer</h3>
-<p>A Java Swing application that animates Stack, Queue, Linked List and HashMap operations so students can see what the code is doing.</p>
-<div class="chips"><span class="chip">Java</span><span class="chip">Swing</span></div>
-</article>
+<div class="sec-head reveal"><span class="eyebrow">Technical Skills</span><h2>What I work with</h2><p>Highlighted items are the ones I use daily at work; the rest are tools I've used in projects or am actively learning.</p></div>
+<div class="grid-3">
+<article class="card skill-card reveal"><h3><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/></svg></span>Backend</h3><div class="skills"><span class="core">C#</span><span class="core">.NET</span><span class="core">ASP.NET Core</span><span class="core">REST APIs</span><span>Authentication</span><span>Entity Framework</span></div></article>
+<article class="card skill-card reveal"><h3><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8"/></svg></span>Frontend</h3><div class="skills"><span class="core">Angular</span><span class="core">TypeScript</span><span>HTML</span><span>CSS</span><span>Responsive UI</span></div></article>
+<article class="card skill-card reveal"><h3><span class="ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>Database</h3><div class="skills"><span class="core">SQL Server</span><span>MySQL</span><span>MongoDB</span><span>Stored procedures</span><span>Query tuning</span></div></article>
+<article class="card skill-card reveal"><h3><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 4.5-2 7H7c0-2.5-2-4-2-7a7 7 0 0 1 7-7z"/><path d="M9 20h6"/></svg></span>AI &amp; Machine Learning</h3><div class="skills"><span class="core">Python</span><span>Pandas · NumPy</span><span>scikit-learn</span><span>TensorFlow (basics)</span><span>LLMs</span><span>RAG</span><span>Generative AI</span></div></article>
+<article class="card skill-card reveal"><h3><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 3 5-6"/></svg></span>Data &amp; BI</h3><div class="skills"><span>Power BI</span><span>Tableau</span><span>Excel</span><span>Jupyter</span><span>Data cleaning</span></div></article>
+<article class="card skill-card reveal"><h3><span class="ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a2.1 2.1 0 0 1-3-3l9.4-9.4z"/></svg></span>Tools</h3><div class="skills"><span class="core">Git &amp; GitHub</span><span>Docker</span><span>CI/CD (GitHub Actions)</span><span>Visual Studio</span><span>VS Code</span></div></article>
 </div>
-<p style="margin-top:22px;color:var(--muted)">All repositories → <a href="https://github.com/muhammad-humayun?tab=repositories" style="color:var(--accent)">github.com/muhammad-humayun</a></p>
 </div>
 </section>
 
-<section id="research">
+<section id="research" class="alt">
 <div class="wrap">
-<div class="sec-head reveal"><span class="kicker">05 — AI &amp; Research</span><h2>Where the AI work is going</h2><p>I'm not an AI engineer yet. This is the ground I'm covering and the questions I find interesting.</p></div>
-<div class="research">
-<article class="r-card reveal"><h3>Retrieval-Augmented Generation</h3><p>How retrieval quality, chunking and grounding affect what an LLM actually says — and how to make RAG systems answer reliably instead of confidently. My current reading and build focus.</p><span class="status">learning · building</span></article>
-<article class="r-card reveal"><h3>Generative AI in .NET</h3><p>Bringing LLM features into the stack I use at work: Semantic Kernel, vector search and prompt-driven workflows inside ASP.NET Core services.</p><span class="status">exploring</span></article>
-<article class="r-card reveal"><h3>Classical machine learning</h3><p>Supervised learning, model evaluation and feature work with scikit-learn — the foundation under everything above, and where most of my public notebooks live.</p><span class="status">practising</span></article>
-<article class="r-card reveal"><h3>Data analysis &amp; BI</h3><p>Cleaning, modelling and visualising data with Python, SQL and Power BI; turning messy records into something a business can act on.</p><span class="status">shipped projects</span></article>
+<div class="sec-head reveal"><span class="eyebrow">AI &amp; Research</span><h2>Where the AI work is going</h2><p>I'm not an AI engineer yet. This is the ground I'm covering and the questions I find interesting.</p></div>
+<div class="grid-4">
+<article class="card insight reveal"><span class="status">learning · building</span><h3>Retrieval-Augmented Generation</h3><p>How retrieval quality, chunking and grounding affect what an LLM actually says — and how to make RAG systems answer reliably instead of confidently.</p></article>
+<article class="card insight reveal"><span class="status">exploring</span><h3>Generative AI in .NET</h3><p>Bringing LLM features into the stack I use at work: Semantic Kernel, vector search and prompt-driven workflows inside ASP.NET Core services.</p></article>
+<article class="card insight reveal"><span class="status">practising</span><h3>Classical Machine Learning</h3><p>Supervised learning, model evaluation and feature work with scikit-learn — the foundation under everything above.</p></article>
+<article class="card insight reveal"><span class="status">shipped</span><h3>Data Analysis &amp; BI</h3><p>Cleaning, modelling and visualising data with Python, SQL and Power BI; turning messy records into something a business can act on.</p></article>
 </div>
-<div class="path reveal">
-<h3>Learning path</h3>
-<div class="steps">
+<div class="card path reveal">
 <div>Python, statistics &amp; data analysis</div>
 <div>Classical ML with scikit-learn</div>
 <div>Full-stack .NET + Angular at Logicose</div>
@@ -278,42 +246,27 @@
 <div>AI Engineer — production ML/LLM systems</div>
 </div>
 </div>
-</div>
-</section>
-
-<section id="education">
-<div class="wrap">
-<div class="sec-head reveal"><span class="kicker">06 — Education</span><h2>Academic background</h2></div>
-<div class="edu reveal">
-<div class="ico" aria-hidden="true">🎓</div>
-<div><h3>B.S. Computer Science</h3><p>Iqra University, Karachi — third year</p></div>
-<div class="meta">2024 — 2028<br>CGPA 3.2</div>
-</div>
-<div class="certs reveal">
-<div class="cert">Python <small>Kaggle · 2024</small></div>
-<div class="cert">Google Data Analytics <small>Coursera · in progress</small></div>
-</div>
-</div>
 </section>
 
 <section id="contact">
 <div class="wrap">
-<div class="sec-head reveal"><span class="kicker">07 — Contact</span><h2>Let's build something</h2><p>Open to software development roles, AI/ML collaborations and interesting problems — in Karachi or remote.</p></div>
+<div class="sec-head reveal"><span class="eyebrow">Contact</span><h2>Let's build something together</h2><p>Open to software development roles, AI/ML collaborations and interesting problems — in Karachi or remote. I usually reply within a day.</p></div>
 <div class="contact">
 <div class="contact-info reveal">
-<p>The fastest way to reach me is email. I usually reply within a day.</p>
 <div class="c-list">
-<a href="mailto:humayunmuhammad902@gmail.com"><svg viewBox="0 0 24 24"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2.5V18h18V6.5l-9 6.3-9-6.3zM4.3 6l7.7 5.4L19.7 6H4.3z"/></svg><span>humayunmuhammad902@gmail.com<small>Email</small></span></a>
-<a href="https://www.linkedin.com/in/humayunmuhammad/" target="_blank" rel="me noopener"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.5c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.7C24 .8 23.2 0 22.2 0z"/></svg><span>linkedin.com/in/humayunmuhammad<small>LinkedIn</small></span></a>
-<a href="https://github.com/muhammad-humayun" target="_blank" rel="me noopener"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg><span>github.com/muhammad-humayun<small>GitHub</small></span></a>
-<a href="https://www.kaggle.com/humayunmuhammad" target="_blank" rel="me noopener"><svg viewBox="0 0 24 24"><path d="M18.8 23.6c0 .2-.2.4-.4.4h-3.3c-.2 0-.4-.1-.5-.3l-5.4-7-1.5 1.4v5.5c0 .2-.2.4-.4.4H4.7c-.2 0-.4-.2-.4-.4V.4c0-.2.2-.4.4-.4h2.6c.2 0 .4.2.4.4v13.9l6.5-6.6c.1-.1.3-.2.5-.2h3.4c.2 0 .4.2.4.4 0 .1 0 .2-.1.3l-6.9 6.7 7.2 8.4c.1.1.1.2.1.3z"/></svg><span>kaggle.com/humayunmuhammad<small>Kaggle</small></span></a>
+<a class="card" href="mailto:humayunmuhammad902@gmail.com"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><b>humayunmuhammad902@gmail.com</b><small>Email — fastest way to reach me</small></span></a>
+<a class="card" href="https://www.linkedin.com/in/humayunmuhammad/" target="_blank" rel="me noopener"><span class="ico soft"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span><span><b>linkedin.com/in/humayunmuhammad</b><small>LinkedIn</small></span></a>
+<a class="card" href="https://github.com/muhammad-humayun" target="_blank" rel="me noopener"><span class="ico soft"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.6 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.6 16 2.5a13.4 13.4 0 0 0-7 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.8c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></svg></span><span><b>github.com/muhammad-humayun</b><small>GitHub</small></span></a>
+<a class="card" href="https://www.kaggle.com/humayunmuhammad" target="_blank" rel="me noopener"><span class="ico soft"><svg viewBox="0 0 24 24"><path d="M5 2v20M5 14l9-9M8 11l9 11"/></svg></span><span><b>kaggle.com/humayunmuhammad</b><small>Kaggle</small></span></a>
 </div>
 </div>
-<form id="contactForm" class="reveal" aria-label="Contact form">
-<label>Your name<input type="text" name="name" required autocomplete="name"></label>
-<label>Your email<input type="email" name="email" required autocomplete="email"></label>
-<label>Message<textarea name="message" required></textarea></label>
-<button class="btn primary" type="submit">Send message</button>
+<form id="contactForm" class="card reveal" aria-label="Contact form">
+<div class="row">
+<label>First name<input type="text" name="name" required autocomplete="given-name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+</div>
+<label>Message<textarea name="message" required placeholder="Tell me about the role or project…"></textarea></label>
+<button class="btn primary" type="submit">Send Message →</button>
 <p class="form-note">Opens your email app with the message pre-filled — nothing is stored on this site.</p>
 </form>
 </div>
@@ -324,10 +277,29 @@
 
 <footer>
 <div class="wrap">
-<span>© <span id="year"></span> Muhammad Humayun · Karachi, Pakistan</span>
-<span><a href="https://github.com/muhammad-humayun">GitHub</a> · <a href="https://www.linkedin.com/in/humayunmuhammad/">LinkedIn</a> · <a href="https://www.kaggle.com/humayunmuhammad">Kaggle</a> · <a href="mailto:humayunmuhammad902@gmail.com">Email</a></span>
+<div class="top">
+<div>
+<a class="logo" href="#home">MH<i></i></a>
+<p class="tag-line">Building reliable software today, engineering AI for tomorrow. Karachi, Pakistan.</p>
+<div class="soc">
+<a href="https://github.com/muhammad-humayun" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a>
+<a href="https://www.linkedin.com/in/humayunmuhammad/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.5c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.7C24 .8 23.2 0 22.2 0z"/></svg></a>
+<a href="https://www.kaggle.com/humayunmuhammad" aria-label="Kaggle"><svg viewBox="0 0 24 24"><path d="M18.8 23.6c0 .2-.2.4-.4.4h-3.3c-.2 0-.4-.1-.5-.3l-5.4-7-1.5 1.4v5.5c0 .2-.2.4-.4.4H4.7c-.2 0-.4-.2-.4-.4V.4c0-.2.2-.4.4-.4h2.6c.2 0 .4.2.4.4v13.9l6.5-6.6c.1-.1.3-.2.5-.2h3.4c.2 0 .4.2.4.4 0 .1 0 .2-.1.3l-6.9 6.7 7.2 8.4c.1.1.1.2.1.3z"/></svg></a>
+<a href="https://instagram.com/humayun_tech" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7.6c-.1-1.6-.4-3-1.6-4.2S17.9 1.9 16.4 1.8C14.8 1.7 9.2 1.7 7.6 1.8 6 1.9 4.6 2.2 3.4 3.4S1.9 6 1.8 7.6c-.1 1.6-.1 7.2 0 8.8.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 7.2.1 8.8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-7.2 0-8.8zm-2.2 10.7a3.2 3.2 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.2 3.2 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.7s-.1-4.4.4-5.7a3.2 3.2 0 0 1 1.8-1.8c1.3-.5 4.3-.4 5.7-.4s4.4-.1 5.7.4a3.2 3.2 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.4-.4 5.7z"/></svg></a>
+</div>
+</div>
+<div><h4>Explore</h4><ul><li><a href="#about">About</a></li><li><a href="#build">What I Build</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li></ul></div>
+<div><h4>Work</h4><ul><li><a href="https://github.com/muhammad-humayun/Job-Market-Intelligence">Job Market Intelligence</a></li><li><a href="https://github.com/muhammad-humayun/Customer-Behavior-Analaysis">Customer Behavior Analysis</a></li><li><a href="https://github.com/muhammad-humayun/Face-Recognition-Using-LBP">Face Recognition (LBP)</a></li><li><a href="https://github.com/muhammad-humayun?tab=repositories">All repositories</a></li></ul></div>
+<div><h4>Connect</h4><ul><li><a href="mailto:humayunmuhammad902@gmail.com">Email</a></li><li><a href="https://www.linkedin.com/in/humayunmuhammad/">LinkedIn</a></li><li><a href="https://github.com/muhammad-humayun">GitHub</a></li><li><a href="https://www.kaggle.com/humayunmuhammad">Kaggle</a></li></ul></div>
+</div>
+<div class="bottom"><span>© <span id="year"></span> Muhammad Humayun. All rights reserved.</span><span class="mono">Built with plain HTML, CSS &amp; JS · Hosted on GitHub Pages</span></div>
 </div>
 </footer>
+
+<div class="mbar" aria-label="Quick actions">
+<a class="btn dark" href="mailto:humayunmuhammad902@gmail.com">Email Me</a>
+<a class="btn primary" href="https://github.com/muhammad-humayun">GitHub</a>
+</div>
 <button class="icon-btn to-top" id="toTop" type="button" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
 <script src="assets/script.js" defer></script>
 </body>

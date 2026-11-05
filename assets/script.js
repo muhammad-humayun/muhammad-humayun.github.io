@@ -1,9 +1,9 @@
-/* Muhammad Humayun — portfolio behaviour (v2) */
+/* Muhammad Humayun — portfolio behaviour (v3) */
 (function () {
 const root = document.documentElement;
 const KEY = 'mh-theme';
 
-// Theme: saved → system → light
+// Theme: saved → light (default)
 function applyTheme(t) {
 root.setAttribute('data-theme', t);
 const btn = document.getElementById('themeToggle');
@@ -16,8 +16,7 @@ const SUN = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke=
 const MOON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
 let saved = null;
 try { saved = localStorage.getItem(KEY); } catch (e) {}
-const system = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-applyTheme(saved || system);
+applyTheme(saved || 'light');
 
 document.addEventListener('DOMContentLoaded', function () {
 const toggle = document.getElementById('themeToggle');
@@ -38,14 +37,6 @@ burger.setAttribute('aria-expanded', String(open));
 });
 menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
 }
-
-// Code card tabs
-document.querySelectorAll('.tabs button').forEach(btn => {
-btn.addEventListener('click', function () {
-document.querySelectorAll('.tabs button').forEach(b => b.classList.toggle('active', b === btn));
-document.querySelectorAll('.code-body').forEach(p => { p.hidden = p.dataset.lang !== btn.dataset.lang; });
-});
-});
 
 // Scroll reveal
 const io = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
@@ -77,6 +68,23 @@ const subject = encodeURIComponent('Portfolio contact from ' + (d.get('name') ||
 const body = encodeURIComponent((d.get('message') || '') + '\n\n— ' + (d.get('name') || '') + ' <' + (d.get('email') || '') + '>');
 window.location.href = 'mailto:humayunmuhammad902@gmail.com?subject=' + subject + '&body=' + body;
 });
+
+// Count-up stats
+const counters = document.querySelectorAll('[data-count]');
+const cio = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
+entries.forEach(e => {
+if (!e.isIntersecting) return;
+const el = e.target, target = parseInt(el.dataset.count, 10), suffix = el.dataset.suffix || '';
+const start = performance.now(), dur = 1200;
+(function tick(now) {
+const p = Math.min(1, (now - start) / dur), v = Math.round(target * (1 - Math.pow(1 - p, 3)));
+el.textContent = v + suffix;
+if (p < 1) requestAnimationFrame(tick);
+})(start);
+cio.unobserve(el);
+});
+}, { threshold: 0.5 }) : null;
+counters.forEach(el => cio ? cio.observe(el) : (el.textContent = el.dataset.count + (el.dataset.suffix || '')));
 
 const y = document.getElementById('year');
 if (y) y.textContent = new Date().getFullYear();
